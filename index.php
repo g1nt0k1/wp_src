@@ -34,6 +34,7 @@
                       <div class="title_wrapper">
                           <h2 class="article_title heading f_bungee">
                                 <?php
+                                    // 12文字以上は「...」で表示させる
                                     $title = mb_substr($post->post_title,0,12);
                                     if(12 > strlen($title)){
                                         echo $title;
