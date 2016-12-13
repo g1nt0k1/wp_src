@@ -25,16 +25,25 @@
           </h1>
           <div class="contents_wrapper clearfix">
               <div class="content">
+                  <?php query_posts('posts_per_page=3'); ?>
                   <?php if(have_posts()) :?>
                   <?php while(have_posts()) : ?>
                   <?php the_post();?>
                   <article>
                       <img class="article_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/article_img/ny_image2.jpg" />
                       <div class="title_wrapper">
-                          <h2 class="article_title heading f_next">
-                              <?php the_title();?>
+                          <h2 class="article_title heading f_bungee">
+                                <?php
+                                    $title = mb_substr($post->post_title,0,12);
+                                    if(12 > strlen($title)){
+                                        echo $title;
+                                    }
+                                    else{
+                                        echo $title.'...';
+                                    }
+                                ?>
                           </h2>
-                          <h2 class="article_price heading f_next">
+                          <h2 class="article_price heading f_bungee">
                               <?php echo get_field("price") ?>
                           </h2>
                       </div>
@@ -44,7 +53,7 @@
                   <?php else:?>
                   <?php endif;?>
               </div>
-              <div class="content">
+              <!-- <div class="content">
                   <article>
                       <img class="article_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/article_img/ny_image2.jpg" />
                       <div class="title_wrapper">
@@ -57,7 +66,7 @@
                       </div>
                       <a class="article_a" href="#"></a>
                   </article>
-              </div>
+              </div> -->
           </div>
           <!-- icon_zone -->
           <!-- Time 時間帯 -->
