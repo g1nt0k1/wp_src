@@ -21,21 +21,32 @@ h2.contents_title.meal_type {
 h2.contents_title {
   margin: 14px 0 20px 17px; }
 
-.contents_wrapper {
+h2.contents_title > span{
+    font-size: 0.6em; }
+
+.contents_wrapper,
+.nav_wrapper {
   width: 100%;
   height: 100%;
-  background-color: #ffffff; }
+  padding-top: 2%; }
+
+.nav_wrapper{
+    width: 96%;
+    height: 100%;
+    margin: 0 2%;
+    border-radius: 20px;
+    background-color: #ffffff;}
 
 div.content {
-  width: 40%;
+  width: 90%;
   margin: 5%; }
 
 /* icon */
 .icon_wrapper {
-  width: 100%;
+  width: 40%;
   text-align: center; }
-  .icon_wrapper > img.icon {
-    width: 48px;
+  .icon_wrapper > img.icon_img {
+    width: 64px;
     margin: 0 auto; }
   .icon_wrapper > h4.icon_title {
     margin-top: 6px;

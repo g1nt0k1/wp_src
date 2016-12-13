@@ -1,10 +1,10 @@
 /*
 Theme Name: gmgd
-Theme URI: 
-Description: 
+Theme URI:
+Description:
 Version: 1.1
 Author: yuki
-Author URI: 
+Author URI:
 */
 @charset "UTF-8";
 /* Common */
@@ -53,19 +53,19 @@ header.first_view, div.wrapper {
 
 /* Responsive layout */
 h1 {
-  font-size: 1.8em;
+  font-size: 2.2em;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 h4, p {
-  font-size: 1em;
+  font-size: 1.4em;
 }
 
 img {
