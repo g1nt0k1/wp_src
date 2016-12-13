@@ -1,0 +1,72 @@
+/* header (Firstview) */
+header.first_view {
+  position: relative; }
+  header.first_view h1.main_title {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    position: absolute;
+    top: 86%;
+    right: 1%; }
+
+/* wrapper and contents */
+.wrapper {
+  width: 100%;
+  height: 100%; }
+
+h2.contents_title.meal_type {
+  margin-top: 40px; }
+
+/* Contents */
+h2.contents_title {
+  margin: 14px 0 20px 17px; }
+
+.contents_wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; }
+
+div.content {
+  width: 40%;
+  margin: 5%; }
+
+/* icon */
+.icon_wrapper {
+  width: 100%;
+  text-align: center; }
+  .icon_wrapper > img.icon {
+    width: 48px;
+    margin: 0 auto; }
+  .icon_wrapper > h4.icon_title {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    color: #484848;
+    text-align: center; }
+
+/* article */
+div.content > article {
+  position: relative;
+  border-radius: 10%;
+  box-shadow: 7px 7px 7px rgba(12, 12, 12, 0.6);
+  overflow: hidden;
+  background-color: #FEF391; }
+
+.article_price, .article_title {
+  color: #454545; }
+
+.article_title {
+  margin: 13px 0 13px 12px; }
+
+.article_price {
+  margin-right: 20px;
+  text-align: right; }
+
+.article_a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/*# sourceMappingURL=top.css.map */

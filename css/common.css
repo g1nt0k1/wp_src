@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* Common */
+body {
+  background-color: #484848;
+}
+
+.heading {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.pos_center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  /* Safari用 */
+  transform: translateY(-50%);
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+header.first_view, div.wrapper {
+  width: inherit;
+  height: inherit;
+}
+
+/* font-style */
+.f_bungee {
+  font-family: 'Bungee', cursive;
+}
+
+.f_monstserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.f_next {
+  font-family: 'The Girl Next Door', cursive;
+}
+
+/* Responsive layout */
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4, p {
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*# sourceMappingURL=common.css.map */
