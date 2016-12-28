@@ -30,7 +30,13 @@
                   <?php while(have_posts()) : ?>
                   <?php the_post();?>
                   <article>
-                      <img class="article_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/article_img/ny_image2.jpg" />
+                      <?php
+                        $image = get_field("image");
+                        if(!$image){
+                            $image = esc_url(get_template_directory_uri())."/img/icon/256/none_image.png";
+                        }
+                      ?>
+                      <img class="article_img" src="<?php echo $image ?>" />
                       <div class="title_wrapper">
                           <h2 class="article_title heading f_bungee">
                                 <?php
@@ -48,26 +54,12 @@
                               <?php echo get_field("price") ?>
                           </h2>
                       </div>
-                      <a class="article_a" href="#"></a>
+                      <a class="article_a" href="<?php the_permalink()?>"></a>
                   </article>
                   <?php endwhile; ?>
                   <?php else:?>
                   <?php endif;?>
               </div>
-              <!-- <div class="content">
-                  <article>
-                      <img class="article_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/article_img/ny_image2.jpg" />
-                      <div class="title_wrapper">
-                          <h2 class="article_title heading f_next">
-                              Article Title
-                          </h2>
-                          <h2 class="article_price heading f_next">
-                              $XXXX
-                          </h2>
-                      </div>
-                      <a class="article_a" href="#"></a>
-                  </article>
-              </div> -->
           </div>
           <!-- icon_zone -->
           <!-- Time 時間帯 -->
@@ -80,14 +72,14 @@
                   <h3 class="icon_title f_bungee">
                       Lunch Time
                   </h3>
-                  <a href="#" class="category_list_a"></a>
+                  <a href="/home/category/lunch" class="category_list_a"></a>
               </div>
               <div class="icon_wrapper float_right">
                   <img class="icon_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/icon/128/icon_moon.png" />
                   <h3 class="icon_title f_bungee">
                       Dinner Time
                   </h3>
-                  <a href="#" class="category_list_a"></a>
+                  <a href="/home/category/dinner" class="category_list_a"></a>
               </div>
           </div>
           <!-- Meal Type 食事の種類 -->
@@ -100,42 +92,42 @@
                   <h3 class="icon_title f_bungee f_bungee">
                       Meet
                   </h3>
-                  <a href="#" class="category_list_a"></a>
+                  <a href="/home/category/meet" class="category_list_a"></a>
               </div>
               <div class="icon_wrapper float_right">
                   <img class="icon_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/icon/128/icon_fish.png" />
                   <h3 class="icon_title f_bungee">
                       Fish
                   </h3>
-                  <a href="#" class="category_list_a"></a>
+                  <a href="/home/category/fish" class="category_list_a"></a>
               </div>
               <div class="icon_wrapper float_left">
                   <img class="icon_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/icon/128/icon_pizza.png" />
                   <h3 class="icon_title f_bungee">
                       Pizza
                   </h3>
-                  <a href="#" class="category_list_a"></a>
+                  <a href="/home/category/pizza" class="category_list_a"></a>
               </div>
               <div class="icon_wrapper float_right">
                   <img class="icon_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/icon/128/icon_humberger.png" />
                   <h3 class="icon_title f_bungee">
                       Humberger
                   </h3>
-                  <a href="#" class="category_list_a"></a>
+                  <a href="/home/category/humberger" class="category_list_a"></a>
               </div>
               <div class="icon_wrapper float_left">
                   <img class="icon_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/icon/128/icon_veg.png" />
                   <h3 class="icon_title f_bungee">
                       Vegetable
                   </h3>
-                  <a href="#" class="category_list_a"></a>
+                  <a href="vegetable" class="category_list_a"></a>
               </div>
               <div class="icon_wrapper float_right">
                   <img class="icon_img" src="<?php echo esc_url(get_template_directory_uri())?>/img/icon/128/icon_dolce.png" />
                   <h3 class="icon_title f_bungee">
                       Dolce
                   </h3>
-                  <a href="#" class="category_list_a"></a>
+                  <a href="/home/category/dolce" class="category_list_a"></a>
               </div>
           </div>
       </div>
