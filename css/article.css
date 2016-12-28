@@ -1,0 +1,93 @@
+/*
+Theme Name: gmgd
+Theme URI:
+Description:
+Version: 1.1
+Author: yuki
+Author URI:
+*/
+
+/* header (Firstview) */
+header{
+  position: relative;
+}
+header h1{
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  position: absolute;
+  top: 86%;
+  right: 1%;
+}
+
+/* contents */
+.wrapper{
+  margin:10px 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  background: #FEF391;
+}
+.article_title{
+  margin: 10px 0;
+  font-size: 2.20em;
+  font-weight: bold;
+  text-align: center;
+}
+.shopdata{
+  margin: 10px 0 10px 0;
+}
+.shopdata img{
+   width: 180px;
+   box-shadow: 7px 7px 7px rgba(12, 12, 12, 0.6);
+   height: auto;
+}
+.data_left{
+    width: 48%;
+}
+.data_right{
+  width: 48%;
+  margin: 3% 0 0 0;
+  text-align: center;
+}
+.data_right p{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin :0 0 20px 0;
+}
+.content{
+  margin: 0 0 10px 0;
+  clear: left;
+}
+.content p img{
+  width: 98%;
+  height: auto;
+  margin: 0 auto 18px;
+  box-shadow: 7px 7px 7px rgba(12, 12, 12, 0.6);
+}
+.content > p{
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.mapdata{
+  margin: 20px 0 10px 0;
+}
+.mapdata img{
+   width: 50%;
+   box-shadow: 7px 7px 7px rgba(12, 12, 12, 0.6);
+   height: auto;
+}
+.title_shopdata{
+  margin: 10px 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+}
+.shop_address {
+  margin: 5% 0 0 0;
+  text-align: center;
+}
+.shop_address  p{
+  font-size: 1.4em;
+  font-weight: bold;
+  margin :0 0 20px 0;
+}
